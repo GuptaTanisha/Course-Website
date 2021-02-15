@@ -1,22 +1,20 @@
 <%- include("header2") -%>
 
-<h1>Upload</h1>
-
 
 <div>
+  <form class="form-signin"  enctype="multipart/form-data" action="/upload" method="POST">
+   <h1 class="h3 mb-3 font-weight-normal">Upload the file</h1>
 
-  <form enctype="multipart/form-data" action="/upload" method="POST">
-    <label for="courses">Choose a course:</label>
-    <select name="courses">
-      <option value="course1">Course 1</option>
-      <option value="course2">Course 2</option>
-      <option value="course3">Course 3</option>
-      <option value="course4">Course 4</option>
-    </select>
-  <input type="file" name="file"/>
-
-  <input  type="submit" value="upload">
-  </form>
+   <label class="sr-only" for="courses">Choose a course:</label>
+   <select name="courses">
+     <option value="course1">Course 1</option>
+     <option value="course2">Course 2</option>
+     <option value="course3">Course 3</option>
+     <option value="course4">Course 4</option>
+   </select>
+ <input class="form-control" type="file" name="file"/>
+<input class="btn btn-lg btn-primary btn-block" type="submit" value="upload" />
+ </form>
 
   </div>
 

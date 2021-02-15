@@ -142,7 +142,7 @@ app.post("/upload",function(req,res)
       name: filename,course:courseName,count:0
     })
     doc.save();
-      res.send("File Uploaded")
+      res.render("uploaded")
   }
 
   })
